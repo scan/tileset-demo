@@ -1,10 +1,23 @@
+tileset-width = 512
+tileset-height = 512
+tile-size = 32
+
+num-tiles-w = (tileset-width / tile-size)
+num-tiles-h = (tileset-height / tile-size)
+
+body, html
+  margin: 0
+  padding: 0
+
 .tile
   background-image: url('../images/wood_tileset.png')
   width: 32px
   height: 32px
+  position: absolute
+  margin: 0
+  padding: 0
 
-  &.tile-0
-    background-position: 0 0
-
-  &.tile-1
-    background-position: 0 -32px
+  for y in 0...(num-tiles-h)
+    for x in 0...(num-tiles-w)
+      &.tile-{y * num-tiles-w + x}
+        background-position: (-1 * x * tile-size)px (-1 * y * tile-size)px
