@@ -4,12 +4,29 @@
     <meta charset="utf-8" />
     <title>FreeTrade</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- build:css(bower_components) vendor.css -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"/>
+    <!-- endbuild -->
     <!-- build:css(.tmp) styles.css -->
     <link rel="stylesheet" href="styles/main.css"/>
     <!-- endbuild -->
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9 tilemap-container">
+          <div class="tilemap" id="tilemap">
+          </div>
+        </div>
+        <div class="col-sm-3 tileset-container">
+          <div class="tileset" id="tileset">
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- build:js(bower_components) vendor.js -->
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbuild -->
     <!-- build:js(app/scripts) main.js -->
     <script src="main.js"></script>

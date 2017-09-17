@@ -1,0 +1,22 @@
+{
+  "name": "tileset-demo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Tom Streller <tom.streller@functional-games.de>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/scan/tileset-demo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}

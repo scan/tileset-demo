@@ -10,6 +10,7 @@ body, html
   padding: 0
 
 .tile
+  box-sizing: border-box
   background-image: url('../images/wood_tileset.png')
   width: 32px
   height: 32px
@@ -21,3 +22,12 @@ body, html
     for x in 0...(num-tiles-w)
       &.tile-{y * num-tiles-w + x}
         background-position: (-1 * x * tile-size)px (-1 * y * tile-size)px
+
+.tileset-container, .tilemap-container
+  position: relative
+  overflow: scroll
+
+.tileset
+  .tile
+    &:hover
+      border: 1px solid black
